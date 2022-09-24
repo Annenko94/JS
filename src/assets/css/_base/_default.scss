@@ -1,0 +1,59 @@
+body {
+  @include textFont(20px, $red, 700, $titleFont);
+
+  line-height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main,
+#app {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1500px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+
+  @media only screen and (max-width: 1600px) {
+    max-width: 1300px;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    max-width: 1100px;
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.grecaptcha-badge {
+  right: -9999px !important;
+}
+
+.lock {
+  height: 100vh;
+  overflow: hidden;
+}

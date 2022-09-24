@@ -1,0 +1,78 @@
+body{
+  color:black;
+}
+.header {
+  margin:0 auto;
+  border: 2px solid red;
+  width: 1300px;
+  height: 1200px;
+}
+
+
+.tabs{
+  margin-top: 100px;
+  margin-left: 100px;
+  display:flex;
+  
+
+&__list{
+  margin-right: 100px;
+}
+  &__item{
+  margin-bottom: 40px;
+  cursor: pointer;
+  &:hover{
+    color:red;
+  }
+}
+}
+
+.card-list{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card-item{
+  width: 250px;
+  border: 1px solid green;
+
+}
+.card-img{
+  display:block;
+  margin: 0 auto;
+ 
+}
+.card-name{
+  text-align: center;
+}
+
+.hidden{
+  display:none;
+}
+
+
+// ACCORDEON
+.list-group{
+ 
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+.list-header{
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 10px;  
+}
+.list-content{
+  background-color: black;
+  color:white;
+  text-align: center;
+  width:400px;
+  margin-bottom: 30px;
+}
+
+.list-group-item{
+margin-left: auto;
+margin-right: auto;
+}
